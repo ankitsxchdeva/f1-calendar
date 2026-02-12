@@ -48,6 +48,7 @@ COUNTRY_FLAG_CODES = {
     "MIAMI": "us",
     "CANADA": "ca",
     "MONACO": "mc",
+    "BARCELONA": "es",  # Spain
     "SPAIN (BARCELONA)": "es",
     "AUSTRIA": "at",
     "GREAT BRITAIN": "gb",
