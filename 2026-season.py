@@ -241,20 +241,14 @@ def make_poster(path, theme):
 
     margin = 0.75 * inch
 
-    # Header
+    # Header (larger title, no strip – uses that space)
     header_y = HEIGHT - margin
     c.setFillColor(theme["ink"])
-    c.setFont(theme["font_bold"], 28)
-    c.drawString(margin, header_y - 34, "2026 FORMULA 1 SEASON")
-
-    # Checkered strip (small gap below title)
-    strip_y = header_y - 60
-    strip_h = 0.22 * inch
-    strip_w = WIDTH - 2 * margin
-    draw_checkered(c, margin, strip_y, strip_w, strip_h, theme["accent"], colors.white)
+    c.setFont(theme["font_bold"], 42)
+    c.drawString(margin, header_y - 48, "2026 FORMULA 1 SEASON")
 
     # Grid for months: 3 columns x 4 rows
-    grid_top = strip_y - 24
+    grid_top = header_y - 80
     grid_bottom = margin
     grid_h = grid_top - grid_bottom
     cols, rows = 3, 4
